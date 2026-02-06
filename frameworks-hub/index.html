@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" alt="Multi-Tech Logo" width="80" />
+          <p class="name">Multi-Tech</p>
+        </div>
+        <div class="burger-menu" id="burger-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul id="nav-links">
+          <li>
+            <a href="#about"><i class="fas fa-house"></i> Головна</a>
+          </li>
+          <li>
+            <a href="#services"><i class="fas fa-gears"></i> Послуги</a>
+          </li>
+          <li>
+            <a href="#gallery"><i class="fas fa-layer-group"></i> Галерея</a>
+          </li>
+          <li>
+            <a href="./bootstrap.html"
+              ><i class="fab fa-bootstrap"></i> Bootstrap</a
+            >
+          </li>
+          <li>
+            <a href="./materialize.html"
+              ><i class="fas fa-wand-magic-sparkles"></i> Materialize</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Ласкаво просимо до Multi-Tech Web Hub</h1>
+        <p>Ваш комплексний гід у світі веб-технологій.</p>
+      </section>
+      <aside class="news-highlight">
+        <div class="news-content">
+          <div class="news-header">
+            <i class="fas fa-bolt"></i>
+            <h3>Останні новини</h3>
+          </div>
+          <p>
+            Ми додали підтримку
+            <a href="./bootstrap.html" class="news-link">Bootstrap</a> та
+            <a href="./materialize.html" class="news-link">Materialize</a>!
+          </p>
+        </div>
+      </aside>
+      <section id="features">
+        <h2>Наші переваги</h2>
+        <div class="flex-container">
+          <div class="flex-item"><i class="fas fa-wind"></i> Швидкість</div>
+          <div class="flex-item"><i class="fas fa-chart-line"></i> Якість</div>
+          <div class="flex-item"><i class="fas fa-code"></i> Підтримка</div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Прайс-лист</h2>
+        <div class="price-flex">
+          <div class="price-card">
+            <span class="category">Frontend</span>
+            <span class="desc">React / Vue розробка</span>
+            <span class="cost">Від 800$</span>
+          </div>
+          <div class="price-card">
+            <span class="category">Дизайн</span>
+            <span class="desc">UI/UX Прототип</span>
+            <span class="cost">Від 400$</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Галерея робіт</h2>
+        <div class="grid-container">
+          <div class="grid-item main-work">Головний Проєкт</div>
+          <div class="grid-item">Проєкт 2</div>
+          <div class="grid-item">Проєкт 3</div>
+          <div class="grid-item">Проєкт 4</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Зворотній зв'язок</h2>
+        <div class="contact-wrapper">
+          <form class="feedback-form">
+            <div class="form-group">
+              <label>Ім'я:</label>
+              <input
+                type="text"
+                pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$"
+                required
+                placeholder="Ім'я:"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" required placeholder="Еmail" />
+            </div>
+            <div class="form-group">
+              <label>Телефон:</label>
+              <input type="tel" required placeholder="+380..." />
+            </div>
+            <div class="form-group">
+              <label>Послуга:</label>
+              <select required>
+                <option value="">Оберіть послугу</option>
+                <option value="web">Web Dev</option>
+                <option value="design">Design</option>
+              </select>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="agree" required />
+              <label for="agree">Згода з політикою конфіденційності</label>
+            </div>
+            <button type="submit" class="cta-button">Відправити</button>
+          </form>
+          <div class="video-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.9325292582662!2d30.510485498538433!3d50.43969443549267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefbb3f8407b%3A0x5bf2348764ce2c0f!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0L_QuNGJ0LXQstGL0YUg0YLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2sua!4v1769779587658!5m2!1sru!2sua"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Multi-Tech Web Hub. Всі права захищені.</p>
+    </footer>
+    <a href="tel:+380681481488" class="phone-pulse-btn">
+      <span class="icon-phone"
+        ><i class="fa-duotone fa-solid fa-phone"></i
+      ></span>
+      <span class="pulse-ring"></span>
+    </a>
+    <a href="#" class="back-to-top"
+      ><i class="fa-solid fa-arrow-turn-up"></i
+    ></a>
+    <script>
+      const burger = document.getElementById("burger-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

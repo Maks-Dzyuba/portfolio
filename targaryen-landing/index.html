@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Дрогон</a></li>
+      <li><a href="#!">Рейгаль</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Візеріон</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a
+          href="#"
+          data-target="slide-out"
+          class="sidenav-trigger hide-on-large-only"
+          ><i class="material-icons">menu</i></a
+        >
+        <div class="brand-logo">
+          <img src="./assets/image/pngwing.com.png" width="60px" alt="" />
+        </div>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#campaigns">Кампанії</a></li>
+          <li><a href="#campaigns">FAQ</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Дракони<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="waves-effect waves-light btn red darken-4"
+              >Присягнути</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+      <li><a href="#campaigns" class="text-sidenav">Кампанії</a></li>
+      <li><a href="#faq" class="text-sidenav">FAQ</a></li>
+      <li><a href="#contact" class="text-sidenav">Присягнути</a></li>
+    </ul>
+    <main>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="./assets/image/top-paral.jpg" />
+        </div>
+      </div>
+      <div class="section">
+        <div class="row container center">
+          <h2 class="header">Дейнеріс Таргарієн</h2>
+          <p class="red-text text-darken-3 lighten-3">
+            Я не буду зупиняти колесо. Я його зламаю.
+          </p>
+        </div>
+        <div class="section row">
+          <div class="col s12 m8">
+            <h2 class="var-gold-text">Спадкоємиця престолу</h2>
+            <p>
+              Денерис Таргарієн — донька короля Ейріса II Таргарієна, відома як
+              Матір Драконів та Визволителька. Її мета — повернути Залізний Трон
+              та встановити справедливість у Вестеросі.
+            </p>
+          </div>
+          <div class="col s12 m4 center">
+            <div style="padding-top: 50px">
+              <a
+                class="btn-floating btn-large waves-effect waves-light red pulse modal-trigger"
+                href="#modal1"
+                ><i class="material-icons">priority_high</i></a
+              >
+              <p>Ультиматум для Серсеї</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img
+            src="./assets/image/142160-art-vizualnoe_iskusstvo-dejeneris_targarien-artist-zhivopis-3840x2160.jpg"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div id="campaigns" class="section">
+          <h2 class="center-align">Військові Кампанії</h2>
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="./assets/image/astapor.jpeg" />
+                  <span class="card-title">Астапор</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Звільнення Бездоганних та знищення Добрих Панів. Початок
+                    великої армії.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button
+                    class="btn waves-effect red darken-4 w100"
+                    onclick="M.toast({html: 'Дракаріс!'})"
+                  >
+                    Звільнити
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="./assets/image/images.jfif" />
+                  <span class="card-title">Мієрин</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Встановлення правосуддя та правління у Великій Піраміді.
+                    Боротьба з Синами Гарпії.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button
+                    class="btn waves-effect red darken-4"
+                    onclick="M.toast({html: 'Дракаріс!'})"
+                  >
+                    Керувати
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="./assets/image/586-castle.jpg" />
+                  <span class="card-title">Вестерос</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Повернення додому, штурм Королівської Гавані та боротьба за
+                    спадщину предків.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button
+                    class="btn waves-effect red darken-4"
+                    onclick="M.toast({html: 'Дракаріс!'})"
+                  >
+                    Завоювати
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="faq" class="section">
+          <h4>Часті питання</h4>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header grey darken-3">
+                <i class="material-icons">help_outline</i>Де мої дракони?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Вони в небі, готові вступити в бій за першим покликом.</span
+                >
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header grey darken-3">
+                <i class="material-icons">security</i>Як вступити до армії?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Достатньо щирого бажання звільнити світ від тиранів.</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="contact" class="section">
+          <div class="card-panel grey darken-4">
+            <h4 class="center">Присягнути на вірність</h4>
+            <form class="row">
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">person</i>
+                <input id="name" type="text" class="validate" required />
+                <label for="name">Ваше ім'я</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" required />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">lock</i>
+                <input id="pass" type="password" class="validate" required />
+                <label for="pass">Таємний пароль</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <select id="house-select">
+                  <option value="" disabled selected>Оберіть ваш Дім</option>
+                  <option value="1">Старки</option>
+                  <option value="2">Ланністери</option>
+                  <option value="3">Тарлі</option>
+                </select>
+                <label>Ваша приналежність</label>
+              </div>
+              <div class="col s12 center">
+                <button
+                  class="btn-large waves-effect waves-light red darken-4"
+                  type="submit"
+                >
+                  Відправити клятву <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Ультиматум для Серсеї</h4>
+        <p>
+          Складіть повноваження та залиште Червоний Замок до заходу сонця.
+          Вестерос належить народу, а не тиранам.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Зрозуміло</a
+        >
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container center">
+        <p>© 2025 Дім Таргарієнів — Вогонь та Кров</p>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

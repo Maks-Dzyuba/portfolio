@@ -1,0 +1,93 @@
+body {
+  background-color: black;
+  color: #e0e0e0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  flex: 1 0 auto;
+}
+h1,
+h2,
+h3,
+.brand-logo,
+.card-title {
+  text-transform: uppercase;
+}
+.nav-wrapper,
+.page-footer {
+  background-color: black !important;
+  border-bottom: 2px solid #8b0000;
+}
+.sidenav {
+  background-color: black !important;
+}
+.sidenav .text-sidenav {
+  color: #c5a059 !important;
+}
+.brand-logo {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+.card:hover {
+  border: 3px solid #8b0000;
+}
+.card .card-content {
+  background-color: black;
+  color: white;
+}
+.card .card-title {
+  font-weight: bold !important;
+  color: #c5a059 !important;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+.card .card-image img {
+  height: 200px;
+  object-fit: cover;
+}
+.card .card-action {
+  background-color: black !important;
+}
+.input-field input,
+.input-field textarea {
+  color: white !important;
+}
+.input-field label {
+  color: #9e9e9e !important;
+}
+.input-field input:focus {
+  border-bottom: 1px solid #8b0000 !important;
+  box-shadow: 0 1px 0 0 #8b0000 !important;
+}
+.input-field input:focus + label {
+  color: #8b0000 !important;
+}
+.dropdown-content {
+  background-color: black !important;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #c5a059 !important;
+}
+.modal-content {
+  background-color: black !important;
+  color: #c5a059 !important;
+}
+.modal-footer {
+  background-color: black !important;
+}
+.modal-footer a {
+  border: 1px solid #c5a059;
+  color: #c5a059 !important;
+}
+.parallax-container {
+  height: 450px;
+}

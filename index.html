@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Frontend Portfolio | [Дзюба Максим]</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+        padding-top: 50px;
+      }
+      .project-card {
+        transition: transform 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+      }
+      .header-title {
+        font-weight: 900;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="center-align">
+        <h2 class="header-title" id="typewriter"></h2>
+        <p class="flow-text">
+          Вітаю! Тут зібрані мої навчальні проекти з верстки та розробки
+          інтерфейсів.
+        </p>
+      </div>
+
+      <div class="row" style="margin-top: 50px">
+        <div class="col s12 m6">
+          <div class="card project-card hoverable">
+            <div class="card-content">
+              <span class="card-title"><b>House Targaryen Landing</b></span>
+              <p>
+                Інтерактивний лендинг із використанням <b>LESS</b> та складних
+                анімацій. Реалізовано Parallax та модальні вікна.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="./targaryen-landing/index.html" class="blue-text"
+                >Відкрити проект →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card project-card hoverable">
+            <div class="card-content">
+              <span class="card-title"><b>Frameworks Showcase</b></span>
+              <p>
+                Порівняльний аналіз верстки на <b>Bootstrap 5</b> та
+                <b>Materialize CSS</b>. Робота з сітками та готовими
+                компонентами.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="./frameworks-hub/index.html" class="blue-text"
+                >Відкрити проект →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer blue darken-3">
+      <div class="container center">
+        <p>© 2026 — Зроблено з кодом та душею</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      const text = "Frontend Developer Portfolio";
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("typewriter").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+      window.onload = typeWriter;
+    </script>
+  </body>
+</html>

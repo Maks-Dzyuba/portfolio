@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      :root {
+        --primary-color: #a855f7;
+        --bg-dark: #0f172a;
+        --card-bg: #1e293b;
+        --border-color: #475569;
+        --text-color: #f1f5f9;
+      }
+
+      body {
+        background-color: var(--bg-dark) !important;
+        color: var(--text-color) !important;
+      }
+      .name {
+        font-weight: 900;
+        font-size: large;
+        color: greenyellow;
+      }
+      .text-primary {
+        color: var(--primary-color) !important;
+      }
+
+      .text-info {
+        color: var(--primary-color) !important;
+      }
+
+      .card {
+        background-color: var(--card-bg) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-color) !important;
+      }
+
+      .navbar-dark.bg-dark {
+        background-color: var(--card-bg) !important;
+        border-color: var(--border-color) !important;
+      }
+
+      .navbar-nav .nav-link.active {
+        color: var(--primary-color) !important;
+        border-bottom: 2px solid var(--primary-color);
+      }
+      .image {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary"
+    >
+      <div class="container">
+        <div class="logo d-flex align-items-center">
+          <img src="./img/logo.png" alt="Multi-Tech Logo" width="80" />
+          <p class="name">Multi-Tech</p>
+        </div>
+        <div class="navbar-nav">
+          <a class="nav-link" href="#"
+            ><i class="fab fa-bootstrap"></i> Bootstrap</a
+          >
+          <a class="nav-link" href="./materialize.html"
+            ><i class="fas fa-wand-magic-sparkles"></i> Materialize</a
+          >
+          <a class="nav-link" href="./index.html"
+            ><i class="fas fa-house"></i> Головна</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div id="techCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/innovation-561388_1280.jpg"
+            class="d-block w-100 image"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption"><h5>Інновації</h5></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/future-7130603_1280.jpg"
+            class="d-block w-100 image"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption"><h5>Технології</h5></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#techCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#techCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="mb-4">Наші рішення</h2>
+      <div class="card-group">
+        <div class="card m-2">
+          <div class="card-body">
+            <h5 class="card-title text-info">Web Design</h5>
+            <p class="card-text">Сучасні макети на Bootstrap.</p>
+          </div>
+        </div>
+        <div class="card m-2">
+          <div class="card-body">
+            <h5 class="card-title text-info">Development</h5>
+            <p class="card-text">Швидка розробка компонентів.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
