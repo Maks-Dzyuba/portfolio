@@ -21,4 +21,5 @@
 
 HTML5, CSS3, LESS, JavaScript (Basic), Bootstrap 5, Materialize CSS, Git.
 
-**Live Demo:** [ПОСИЛАННЯ ТУТ]
+**Live Demo:** https://maks-dzyuba.github.io/portfolio/
+
